@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Judul Atas */
+.atas {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.company {
+    color: #3a9b13;
+}
+
+header nav .company {
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-left: 10px;
+    font-size: 2em;
+}
+
+/* box kotak navigasi ke section */
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container div a {
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 14sp;
+    border: 2px solid;
+    background-color: green;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+/* align center buat semua h1 */
+main h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#home {
+    margin-top: 3rem;
+}
+
+/* tombol geser gambar */
+.slide {
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    font-size: 30pt;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.isi-gambar {
+    display: flex;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0);
+}
+
+/* pemisah section */
+
+.section-ganjil {
+    margin-top: 5rem;
+    padding: 2rem 4rem;
+    background-color: #75c46b;
+    color: #FEF9F2;
+}
+
+.section-genap {
+    margin-top: 5rem;
+    padding: 2rem 4rem;
+    background-color: #ffffff;
+    color: #75c46b;
+}
+
+/* section portfolio */
+main section.evenSection .paragraf {
+    margin-left: 2rem;
+}
+
+main section.oddSection .paragraf {
+    margin-right: 2rem;
+}
+/* section profile */
+.isiprofile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+/* porto */
+.kotak {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.kotak .kartu {
+    width: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+}
+
+.kotak .kartu .gambarproyek {
+    margin-bottom: 1rem;
+}
+
+.kotak .kartu .gambarproyek img {
+    width: 8rem;
+    border-radius: 50%;
+}
+
+.kotak .kartu .textporto p {
+    font-size: 1.3em;
+}
+
+
+.messagekartu {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.pesan {
+    display: flex;
+    justify-content: space-around;
+}
+
+#kirimPesan table tr td button {
+    display: block;
+    width: 100%;
+    padding: 0.4rem;
+    text-transform: uppercase;
+}
+
+#kirimPesan table tr td label {
+    text-transform: uppercase;
+}
+
+#kirimPesan table tr td {
+    padding-bottom: 1rem;
+}
+
+#kirimPesan table tr td:nth-child(2) {
+    padding-left: 2rem;
+}
+

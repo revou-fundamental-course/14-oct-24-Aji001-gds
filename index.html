@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title> JS Trial </title>
+        <link rel="stylesheet" href="Style/style.css">
+    </head>
+    <body>
+    <header>
+        <nav class="atas">
+        <div>
+             <p class="company"> CV. Survey Jaya </p>
+        </div>
+
+        <div class="container">
+            <div> <a href="#home"> Home </a></div>
+            <div> <a href="#profile"> Our Profile </a> </div>
+            <div> <a href="#portfolio"> Portfolio </a> </div>
+            <div> <a href="#messageus"> Message Us </a> </div>
+         </div>
+
+        </nav>
+    </header>
+    <hr />
+
+    <!-- Bagian Konten-->
+    <main>
+        <section id="home">
+            <header>
+                <h1 style="text-align: center;"> Halooo <span id="name"> Kamu </span> Welcome to my Web </h1>
+            </header>
+
+            <article>
+                <p style="text-align: center; margin-bottom: 3rem;"> ini adalah website latihan pertama </p>
+            </article>
+        <div class="pemisah1">
+            <div style="display: flex; justify-content: center; ">       
+                <button class="slide" onclick="plusDivs(-1)"> <a> < </a></button>
+
+                <div class="isi-gambar">
+                <img
+                class="img-slideshow"
+                src="https://www.waps.net.au/wp-content/uploads/2017/01/MINING-CONSTRUCTION-7.jpg"
+                />
+                <img
+                class="img-slideshow"
+                src="https://fairmatesurveys.co.uk/wp-content/uploads/2023/12/Untitled-design-2023-12-08T114521.357.jpg"
+                />
+                <img
+                class="img-slideshow"
+                src="https://media.licdn.com/dms/image/D4D12AQFaEvDlEbQAOw/article-cover_image-shrink_600_2000/0/1681217905045?e=2147483647&v=beta&t=9tXGPzsMl5x6JnK4CeH3yRsNVVOXuaYbWz3-0zTOdGw"
+                />   
+                </div>
+                <button class="slide" onclick="plusDivs(1)"> <a> > </a> </button>
+            </div>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+               showDivs(slideIndex);
+   
+               function plusDivs(n) {
+                   showDivs((slideIndex += n))
+               }
+   
+               function showDivs(n) {
+                   var i;
+                   var imgList = document.getElementsByClassName("img-slideshow")
+                   if (n > imgList.length) slideIndex =1;
+                   else if ( n < 1) slideIndex = imgList.length;
+                   for (i = 0; i < imgList.length; i++) {
+                       imgList[i].style.display = "none";
+                   }
+                   imgList[slideIndex - 1].style.display = "block";
+               }
+           </script>
+        </section>
+
+    <!-- Bagian Our Profile-->
+    <section id="profile" class="section-ganjil">
+        <header>
+            <h1> Our Profile</h1>
+        </header>
+        <div class="isiprofile"> 
+            <div class="paragraf">
+                <p>
+                    CV. Survey Jaya adalah adalah perusahaan yang bergerak di bidang konsultasi pemetaan dan geospasial, 
+                    yang didedikasikan untuk menyediakan solusi berbasis data yang akurat dan inovatif. 
+                    Kami menawarkan layanan yang mencakup pemetaan topografi, survei geodetik, pemodelan spasial, 
+                    analisis penggunaan lahan, hingga pemetaan lingkungan dan sumber daya alam.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr />
+
+    <!-- Bagian Section Portfolio-->
+        <section id="portfolio" class="section-genap">
+            <header>
+                <h1> Portfolio </h1>
+            </header>
+            <article>
+                <h2 style="text-align: center; margin-bottom: 2rem;"> Bidang Proyek Yang Pernah Kami Selesaikan : </h2>
+            </article>
+
+            <div class="kotak">
+
+                <div class="kartu">
+                    <div class="gambarproyek">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/001/432/105/small/green-backdrop-with-dots-vector.jpg" alt="">
+                    </div>
+                    <div class="textporto">
+                        <p>
+                            FOTO UDARA
+                        </p>
+                    </div>
+                </div>
+
+                <div class="kartu">
+                    <div class="gambarproyek">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/001/432/105/small/green-backdrop-with-dots-vector.jpg" alt="">
+                    </div>
+                    <div class="textporto">
+                        <p>
+                            PENGUKURAN TERESTRIAL
+                        </p>
+                    </div>
+                </div>
+
+                <div class="kartu">
+                    <div class="gambarproyek">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/001/432/105/small/green-backdrop-with-dots-vector.jpg" alt="">
+                    </div>
+                    <div class="textporto">
+                        <p>
+                            SURVEY BATIMETRI
+                        </p>
+                    </div>
+                </div>
+
+                <div class="kartu">
+                    <div class="gambarproyek">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/001/432/105/small/green-backdrop-with-dots-vector.jpg" alt="">
+                    </div>
+                    <div class="textporto">
+                        <p>
+                            SISTEM INFORMASI GEOSPASIAL
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <hr />
+
+        <!-- Bagian Section Message US-->
+        <section id="messageus" class="section-ganjil">
+            <header>
+                <h1> Message Us </h1>
+            </header>
+
+        <div class="pesan">
+            <table>
+                <form name="myForm" action="/" method="get" id="formUser">
+                    <tr>
+                        <td>
+                            <label for="nama">nama</label>
+                        </td>
+                        <td>
+                            <input required type="text" name="name-input" id="nama" placeholder="Nama">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="tanggalLahir">
+                                tanggal lahir
+                            </label>
+                        </td>
+                        <td>
+                            <input required type="date" name="date-lahir" id="tanggalLahir">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">
+                                jenis kelamin
+                            </label>
+                        </td>
+                        <td>
+                            <input required type="radio" name="jk" id="laki" value="Laki-Laki">
+                            <label for="laki">Laki-Laki</label>
+                            <input required type="radio" name="jk" id="perempuan" value="Perempuan">
+                            <label for="perempuan">Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pesan">pesan</label>
+                        </td>
+                        <td>
+                            <textarea required placeholder="Pesan" name="pesan" id="pesan" cols="50" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit">
+                                Submit
+                            </button>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+            <div>
+                <p>
+                    Current Time: <span id="currentDate"></span>
+                    <span id="currentMonth"></span>
+                    <span id="currentYear"></span>
+                </p>
+                <p>Nama: <span id="namaUser"></span></p>
+                <p>Tanggal Lahir: <span id="tglUser"></span></p>
+                <p>Jenis Kelamin: <span id="jKelamin"></span></p>
+                <p>Pesan: <span id="pesanUser"></span></p>
+            </div>
+        </div>
+
+
+
+    </main>
+    <footer>
+        <p style="text-align: center;"> Made by Ilham (2024) </p>
+    </footer>
+
+
+    <script src="JS/script.js"> </script>
+    </body>
+
+
+</html>

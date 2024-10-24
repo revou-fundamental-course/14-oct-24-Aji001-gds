@@ -1,0 +1,38 @@
+function replaceName(){
+    let nama = prompt("Siapa Nama Anda?","");
+    document.getElementById("name").innerHTML = nama
+}
+
+replaceName()
+
+// ini buat form
+
+const namaUser = document.getElementById("nama");
+const tglLahir = document.getElementById("tanggalLahir");
+const pesanUser = document.getElementById("pesan");
+const form = document.getElementById("formUser");
+const today = new Date();
+const time = today.getTimezoneOffset();
+const day = today.getDate();
+const month = today.getMonth()+1;
+const year = today.getFullYear();
+
+form.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    document.getElementById("currentDate").innerHTML = day+" - ";
+    document.getElementById("currentMonth").innerHTML = month+" - ";
+    document.getElementById("currentYear").innerHTML = year;
+    document.getElementById("namaUser").innerHTML = namaUser.value;
+    document.getElementById("tglUser").innerHTML = tglLahir.value;
+    document.getElementById("pesanUser").innerHTML = pesanUser.value;
+
+    var gender = document.getElementsByName("jk");
+    
+    for (let i = 0; i <= gender.length; i++) {
+        if(gender[i].checked){
+            document.getElementById("jKelamin").innerHTML = gender[i].value;
+        }
+        
+    }
+})
+
